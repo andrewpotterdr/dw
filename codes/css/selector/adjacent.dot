@@ -1,0 +1,12 @@
+digraph G {
+h1[label="<h1>"] ;
+p1[label="<p>"];
+p2[label="<p>"];
+p3[label="<p>"];
+p4[label="<p>"];
+body->h1;
+body -> p1;
+body -> p2;
+body -> p3;
+body->div->p4
+}
