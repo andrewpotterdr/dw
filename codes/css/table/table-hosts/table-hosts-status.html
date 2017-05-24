@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    @font-face {
+      src: url(BungeeInline-Regular.ttf);
+      font-family: Bungee;
+    }
+
+    table, td, th {
+      border: 1px solid #000;
+    }
+    table {
+      border-collapse: collapse;
+      width: 400px;
+    }
+    tr.server-up td:last-child, tr.server-down  td:last-child {
+      background-repeat: no-repeat;
+      background-size: 17px;
+      background-position: center;
+      width: 25px;
+    }
+    tr.server-up  td:last-child {
+      background-image: url(server-up.svg);
+    }
+    tr.server-down td:last-child {
+      background-image: url(server-down.svg);
+    }
+    tr.server-up td:nth-last-child(-n+2) {
+      background-color: rgba(38, 188, 44, 0.28);
+    }
+    tr.server-down td:nth-last-child(-n+2) {
+      background-color: rgba(198, 27, 14, 0.27);
+    }
+    body>header {
+      height: 10vh;
+      min-height: 60px;
+      background-color: green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    body>header>h1 {
+      margin: 0px;
+      color: #fff;
+      font-family: Bungee, sans-serif;
+      /*text-align: center;*/
+    }
+    body>main {
+      width: 80%;
+      margin: auto;
+      padding-top: 10px;
+    }
+    body>main>table {
+      margin: auto;
+    }
+    body {
+      margin: 0px;
+    }
+    @media screen and (max-width: 600px) {
+      table {
+        width: 100%;
+      }
+      body>main {
+        width: 90%;
+      }
+    }
+    @media print {
+      *, body>header>h1 {
+        font-family: Times, serif;
+      }
+      body>header {
+        display:block;
+        text-align: left;
+      }
+      body>main>table {
+        margin: 0px;
+      }
+      body>main {
+        margin: 0px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HostMonitor</h1>
+  </header>
+  <main>
+    <table>
+      <caption>Host Monitorados</caption>
+      <thead>
+        <tr>
+          <th>Host</th>
+          <th>Address</th>
+          <th colspan="2">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="server-up">
+          <td rowspan="3">PC01</td>
+          <td rowspan="3">192.168.0.1</td>
+          <td>HTTP</td>
+          <td></td>
+        </tr>
+        <tr class="server-up">
+          <td>FTP</td>
+          <td></td>
+        </tr>
+        <tr class="server-down">
+          <td>SMTP</td>
+          <td></td>
+        </tr>
+        <tr class="server-up">
+          <td rowspan="4">PC02</td>
+          <td rowspan="4">192.168.0.2</td>
+          <td>POP3</td>
+          <td></td>
+        </tr>
+        <tr class="server-down">
+          <td>SSH</td>
+          <td></td>
+        </tr>
+        <tr class="server-up">
+          <td>HTTP</td>
+          <td></td>
+        </tr>
+        <tr class="server-up">
+          <td>DNS</td>
+          <td></td>
+        </tr>
+        <tr class="server-up">
+          <td rowspan="2">PC03</td>
+          <td rowspan="2">192.168.0.3</td>
+          <td>HTTP</td>
+          <td></td>
+        </tr>
+        <tr class="server-up">
+          <td>DNS</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

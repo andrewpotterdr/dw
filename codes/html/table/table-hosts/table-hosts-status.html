@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    table, td, th {
+      border: 1px solid #000;
+    }
+    table {
+      border-collapse: collapse;
+      width: 400px;
+    }
+    img {
+      width: 20px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Host Monitorados</caption>
+    <thead>
+      <tr>
+        <th>Host</th>
+        <th>Address</th>
+        <th colspan="2">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="3">PC01</td>
+        <td rowspan="3">192.168.0.1</td>
+        <td>HTTP</td>
+        <td><img src="server-up.svg" alt="server up"></td>
+      </tr>
+      <tr>
+        <td>FTP</td>
+        <td><img src="server-up.svg" alt="server up"></td>
+      </tr>
+      <tr>
+        <td>SMTP</td>
+        <td><img src="server-down.svg" alt="server down"></td>
+      </tr>
+      <tr>
+        <td rowspan="4">PC02</td>
+        <td rowspan="4">192.168.0.2</td>
+        <td>POP3</td>
+        <td><img src="server-up.svg" alt="server up"></td>
+      </tr>
+      <tr>
+        <td>SSH</td>
+        <td><img src="server-down.svg" alt="server down"></td>
+      </tr>
+      <tr>
+        <td>HTTP</td>
+        <td><img src="server-up.svg" alt="server up"></td>
+      </tr>
+      <tr>
+        <td>DNS</td>
+        <td><img src="server-up.svg" alt="server up"></td>
+      </tr>
+      <tr>
+        <td rowspan="2">PC03</td>
+        <td rowspan="2">192.168.0.3</td>
+        <td>HTTP</td>
+        <td><img src="server-up.svg" alt="server up"></td>
+      </tr>
+      <tr>
+        <td>DNS</td>
+        <td><img src="server-up.svg" alt="server up"></td>
+      </tr>
+
+    </tbody>
+  </table>
+</body>
+</html>

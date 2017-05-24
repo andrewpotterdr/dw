@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  :root {
+    --color-bg-main: rgb(51,	122,	183);
+    --color-text-main: rgb(255, 255, 255)
+  }
+  html {
+    font-family: Arial, sans-serif;
+  }
+  main {
+    width: 960px;
+    margin: auto;
+  }
+  h1 {
+    text-align: center;
+  }
+  fieldset {
+    border-radius: 5px;
+    margin: 0px;
+    border-width: 1px;
+    padding: 0px;
+  }
+  fieldset, form>div{
+    margin-bottom: 15px;
+  }
+  fieldset>div {
+    margin: 8px;
+  }
+  fieldset>div label {
+    display: block;
+  }
+  fieldset>div input[type=radio] {
+    width: auto;
+  }
+  fieldset>div input[type=radio]+label {
+    display: inline;
+  }
+  fieldset>div input {
+    border: none;
+    border-bottom: 2px solid rgb(204, 204, 204);
+    width: 80%;
+  }
+  fieldset>div input:focus {
+    outline: none;
+    border-bottom: 3px solid var(--color-bg-main);
+  }
+  fieldset>div>div {
+    display: inline-block;
+  }
+  fieldset>div>div {
+    width: 30%;
+  }
+  header {
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
+    padding: 10px 4px;
+  }
+  button {
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
+    border-radius: 10px;
+    height: 2.5em;
+    width: 150px;
+    border: none;
+    font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Cadastramento</h1>
+    <form action="">
+      <fieldset>
+        <header>Dados Pessais</header>
+        <div>
+          <label for="nome">Nome Completo</label>
+          <input type="text" name="nome" id="nome">
+        </div>
+        <div>
+          Sexo:<br>
+          <input type="radio" name="sexo" id="masculino" value="masculino">
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="sexo" id="feminino" value="feminino">
+          <label for="feminino">Feminino</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <header>Endereço</header>
+        <div>
+          <div>
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome">
+          </div>
+          <div>
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome">
+          </div>
+          <div>
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome">
+          </div>
+        </div>
+        <div>
+          <div>
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome">
+          </div>
+          <div>
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome">
+          </div>
+          <div>
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome">
+          </div>
+        </div>
+      </fieldset>
+      <div>
+        <input type="checkbox" name="ok" id="ok">
+        <label for="ok">Li e concordo com os termos deste site</label>
+      </div>
+      <div>
+        <button>Cadastrar &#10145;</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
