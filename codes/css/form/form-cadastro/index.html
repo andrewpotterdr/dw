@@ -24,7 +24,7 @@
     border-width: 1px;
     padding: 0px;
   }
-  fieldset, form>div{
+  fieldset{
     margin-bottom: 15px;
   }
   fieldset>div {
@@ -50,8 +50,6 @@
   }
   fieldset>div>div {
     display: inline-block;
-  }
-  fieldset>div>div {
     width: 30%;
   }
   header {
@@ -82,7 +80,7 @@
         </div>
         <div>
           Sexo:<br>
-          <input type="radio" name="sexo" id="masculino" value="masculino">
+          <input type="radio" name="sexo" id="masculino" value="masculino" checked>
           <label for="masculino">Masculino</label>
           <input type="radio" name="sexo" id="feminino" value="feminino">
           <label for="feminino">Feminino</label>
@@ -92,11 +90,11 @@
         <header>Endereço</header>
         <div>
           <div>
-            <label for="nome">Nome Completo</label>
+            <label for="nome">Rua</label>
             <input type="text" name="nome" id="nome">
           </div>
           <div>
-            <label for="nome">Nome Completo</label>
+            <label for="nome">Bairro</label>
             <input type="text" name="nome" id="nome">
           </div>
           <div>
