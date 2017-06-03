@@ -53,6 +53,7 @@ main section p {
 /* footer */
 footer {
   height: 25vh;
+  min-height: 100px;
   background-color: rgb(236, 236, 226);
 }
 
