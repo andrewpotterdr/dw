@@ -1,0 +1,10 @@
+<students>
+  <student>
+    <name>Fulano</name>
+    <email>fulano@gmail.com</email>
+  </student>
+  <student>
+    <name>Sicrano</name>
+    <email>sicrano@gmail.com</email>
+  </student>
+</students>
