@@ -73,7 +73,7 @@ for(let flag = 0; flag < numbers.length; flag++) {
   result += numbers[flag]+' '
   // console.log(numbers[flag])
 }
-console.log(result) '1 2 4 7 '
+console.log(result) //=> '1 2 4 7 '
 
 let values = []
 values[0] = 1
