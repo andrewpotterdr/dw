@@ -171,8 +171,9 @@ let post = {
   title: 'lorem ipsum dolor',
   text: 'Nunc accumsan in ipsum a mattis...'
 }
-for(let field of Object.entries(post)){
-  console.log(post[field])
+// console.log(Object.entries(post))
+for(let [field, value] of Object.entries(post)){
+  console.log(`${field}: ${value}`)
 }
 //=>
 // 'lorem ipsum dolor',
