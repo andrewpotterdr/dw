@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #iptable table {
+      margin-top: 20px;
+    }
+    #iptable table thead tr {
+      background: #000;
+      color: #fff;
+    }
+
+    #iptable table {
+      border-collapse: collapse;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="add-ip">
+    <input type="text" id="ip" placeholder="IP">
+    <input type="text" id="mask" placeholder="Mask">
+    <input type="text" id="version" placeholder="Version">
+    <button>Add</button>
+  </div>
+  <div id="iptable">
+    <table>
+      <thead>
+        <tr>
+          <th>IP</th>
+          <th>Mask</th>
+          <th>Version</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <script src="ipsToTableEvent.js"></script>
+</body>
+</html>

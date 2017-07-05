@@ -18,4 +18,7 @@ let ip = {
   }
 }
 
+const ipTable = document.querySelector('#ip-table')
+ipTable.innerHTML = ip.toHTML()
+
 console.log(ip.toHTML())
