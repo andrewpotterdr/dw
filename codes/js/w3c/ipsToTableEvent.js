@@ -29,5 +29,9 @@ iptables.render()
 
 const button = document.querySelector('button')
 button.addEventListener('click', function() {
-  console.log("You clicked!")
+  const inputs = document.querySelectorAll('input')
+  const ipTbody = document.querySelector('#iptable table tbody')
+
+  const values = Array.from(inputs).map((input) => input.value)
+  ipTbody.innerHTML += `<tr><td>${values.join('</td><td>')}</td></tr>`
 })
