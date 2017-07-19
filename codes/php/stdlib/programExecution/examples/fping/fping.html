@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div#loading {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="network" placeholder="network">
+	<input type="text" id="mask" placeholder="mask">
+	<button>processa</button>
+	<div id="loading">
+		<img src="spinner.gif" alt="">
+	</div>
+	<ul id="result"></ul>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script>
+		$('button').click(function(){
+			$('div#loading').show();
+			var url = 'fping.php?network='+$('#network').val()+'&mask='+$('#mask').val();
+			$.getJSON(url, function(ips){
+				var content  = '';
+				for(var index in ips){
+					content += '<li>'+ips[index]+'</li>';
+				}
+				$('#result').html(content);
+				$('div#loading').hide();
+			});
+		})
+	</script>
+</body>
+</html>

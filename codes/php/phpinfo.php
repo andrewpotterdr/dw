@@ -5,4 +5,5 @@
   // /etc/php/7.1/apache2/php.ini
   // php.ini (display_errors = Off)
   phpinfo();
+  1+1 1+1
 ?>
