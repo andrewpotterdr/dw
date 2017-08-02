@@ -34,6 +34,17 @@ Assim, será exigido que a apresentação possua um tempo máximo de 3 minutos e
 * Alguma seleção de telas de sistemas existentes que façam algo parecido ao que se propõe, ou seja, não precisamos reinventar a roda sempre;
 * E apresentar alguns esboços de tela de como a equipe enxerga o protótipo final do projeto, pode ser até mesmo rabiscos no papel, mas o que importa é que fique claro as interações do sistema e sua navegabilidade.
 
+Lembrando que cada projeto deve incluir o arquivo `README.md` no raiz do seu projeto descrevendo:
+
+<b>
+&#35; NOME-DO-PROJETO<br>
+&#35;&#35; Descrição<br>
+&#35;&#35; Objetivo<br>
+&#35;&#35; Inspiração<br>
+&#35;&#35; Protótipos<br>
+&#35;&#35; Screenshots
+</b>
+
 ### Equipes
 
 **Equipe #1**: [Mithrandir Firewall](https://github.com/eduardofelipeff/mithrandir)
