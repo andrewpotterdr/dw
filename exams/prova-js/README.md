@@ -16,9 +16,9 @@ Leia as observações a seguir:
 
 ### DESCRIÇÃO DA PROVA
 
-Considere que a empresa eZ Server Monitor, devido a um problema de backup em seus sistemas, veio em busca de algum profissional no IFPB com domínio nos conceitos de adminstração de sistemas, e que pudesse continuar a criação da página Web de seu sistema [eSM Web](http://ezservermonitor.com/esm-web/features).
+Considere que a empresa eZ Server Monitor, graças ao sucesso dos profissional no IFPB para gerar o Front-End, veio em busca de um profissional com domínio nos conceitos de adminstração de sistemas, que pudesse continuar a criação da página Web de seu sistema [eSM Web](http://ezservermonitor.com/esm-web/features), corrompido devido a problemas de backup.
 
-A princípio foi disponibilizado o projeto HTML e CSS neste [link](code.zip), contudo, o sistema deve gerar a interface semelhante ao da *Figura 1* usando dados JSON na pasta `data/`.
+A princípio foi disponibilizado o projeto HTML e CSS neste [link](code.zip), contudo, o sistema deve gerar a interface semelhante ao da *Figura 1* usando dados JSON na pasta `data/` por meio da linguagem Javascript.
 
 *Figura 1 - Layout da página*
 
