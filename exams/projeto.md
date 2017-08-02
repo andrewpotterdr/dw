@@ -42,6 +42,7 @@ Lembrando que cada projeto deve incluir o arquivo `README.md` no raiz do seu pro
 &#35;&#35; Objetivo<br>
 &#35;&#35; Inspiração<br>
 &#35;&#35; Protótipos<br>
+&#35;&#35; Comandos<br>
 &#35;&#35; Screenshots
 </b>
 
